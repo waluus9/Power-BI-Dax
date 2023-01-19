@@ -1,4 +1,5 @@
-Date Table (CALENDARAUTO) = 
+```cadence
+Date Table (CALENDARAUTO) =
 VAR MinYear = YEAR(MIN('Calendar'[Transaction_Date]))
 VAR MaxYear = YEAR(MAX('Calendar'[Transaction_Date]))
 
@@ -16,3 +17,4 @@ ADDCOLUMNS(
     "Month Short", FORMAT([Date], "mmm"),
     "Week Number", WEEKNUM([Date])
 )
+```
